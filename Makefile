@@ -24,7 +24,7 @@ SOURCES = $(sort $(wildcard src/*.c))
 OBJECTS = $(SOURCES:.c=.o)
 TARGET  = mdp
 DESTDIR =
-PREFIX  ?= /usr/local
+PREFIX  ?= $(HOME)/local
 
 CURSES  = ncursesw
 LDFLAGS ?= -s
